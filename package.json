@@ -11,7 +11,7 @@
   },
   "nodemonConfig": {
     "ignore": [
-      "typings/*"
+      "**/typings/**"
     ]
   },
   "dependencies": {
