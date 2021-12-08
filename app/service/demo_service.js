@@ -1,11 +1,7 @@
-'use strict';
+import { Service } from 'zenweb';
 
-const { Service } = require('zenweb');
-
-class DemoService extends Service {
+export default class DemoService extends Service {
   sayHello() {
     return 'Hello';
   }
 }
-
-module.exports = DemoService;

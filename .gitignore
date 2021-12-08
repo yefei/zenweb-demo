@@ -10,3 +10,5 @@ package-lock.json
 apidoc/
 .github/
 typings/
+app/model/index.d.ts
+app/model/index.js

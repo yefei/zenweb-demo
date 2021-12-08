@@ -1,0 +1,10 @@
+{
+  "host": "localhost",
+  "port": 3306,
+  "user": "root",
+  "password": "",
+  "database": "test",
+  "optionsDir": "app/model/options",
+  "typingFile": "app/model/index.d.ts",
+  "modelsFile": "app/model/index.js"
+}

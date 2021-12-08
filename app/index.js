@@ -1,9 +1,8 @@
-'use strict';
+import { create } from 'zenweb';
+// import { queries } from './model/index.js';
+import dbConfig from './config/db.js';
 
-const dbConfig = require('./config/db');
-const { queries } = require('./model');
-
-const app = module.exports = require('zenweb').create({
+export const app = create({
   core: {
     proxy: true,
   },
@@ -16,7 +15,7 @@ const app = module.exports = require('zenweb').create({
   },
   sentry: process.env.SENTRY_DSN ? { dsn: process.env.SENTRY_DSN } : null,
   // metric: {},
-  cors: { origin: '*' },
+  // cors: { origin: '*' },
   validation: {},
   mysql: dbConfig.mysql,
   body: {
@@ -24,6 +23,6 @@ const app = module.exports = require('zenweb').create({
   } 
 });
 
-app.defineContextCacheProperty('model', ctx => queries(app.mysql));
+// app.defineContextCacheProperty('model', ctx => queries(app.mysql));
 
 app.start();
