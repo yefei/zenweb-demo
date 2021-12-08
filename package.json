@@ -15,12 +15,12 @@
     ]
   },
   "dependencies": {
-    "@zenweb/cors": "^1.1.0",
+    "@zenweb/cors": "^2.0.0",
     "@zenweb/mysql": "^1.2.1",
     "debug": "^4.3.2",
     "mysql2": "^2.3.0",
     "zenorm": "^1.4.2",
-    "zenweb": "^2.0.0"
+    "zenweb": "^2.0.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
