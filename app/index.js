@@ -1,5 +1,5 @@
 import { create } from 'zenweb';
-// import { queries } from './model/index.js';
+import { queries } from './model/index.js';
 import dbConfig from './config/db.js';
 
 export const app = create({
@@ -23,6 +23,6 @@ export const app = create({
   } 
 });
 
-// app.defineContextCacheProperty('model', ctx => queries(app.mysql));
+app.defineContextCacheProperty('model', ctx => queries(app.mysql));
 
 app.start();
