@@ -1,5 +1,5 @@
 import { Router } from 'zenweb';
-export const router = Router({ prefix: '/user' });
+export const router = new Router({ prefix: '/user' });
 
 /**
  * @api {get} /demo
