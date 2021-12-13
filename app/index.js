@@ -1,5 +1,4 @@
 import { create } from 'zenweb';
-import { queries } from './model/index.js';
 import dbConfig from './config/db.js';
 
 export const app = create({
@@ -18,11 +17,10 @@ export const app = create({
   cors: { origin: '*' },
   validation: {},
   mysql: dbConfig.mysql,
+  orm: {},
   body: {
     multipart: true, // 上传文件支持
   } 
 });
-
-app.defineContextCacheProperty('model', ctx => queries(app.mysql));
 
 app.start();

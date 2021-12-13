@@ -4,7 +4,6 @@
   "private": true,
   "main": "app/index.js",
   "scripts": {
-    "dbgen": "zenorm gen dbgen.json",
     "lint": "eslint . --max-warnings 0",
     "start": "node app",
     "dev": "cross-env NODE_ENV=development APP_ENV=dev DEBUG=*,-zenweb:metric nodemon app"
@@ -17,10 +16,11 @@
   "dependencies": {
     "@zenweb/cors": "^2.0.0",
     "@zenweb/mysql": "^1.2.1",
+    "@zenweb/orm": "^1.0.0",
     "debug": "^4.3.2",
     "mysql2": "^2.3.0",
-    "zenorm": "^2.0.1",
-    "zenweb": "^2.0.1"
+    "zenorm": "^2.2.0",
+    "zenweb": "^2.1.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
