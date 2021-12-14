@@ -14,10 +14,13 @@
     ]
   },
   "dependencies": {
+    "@zenweb/api": "^2.0.0",
     "@zenweb/cors": "^2.0.0",
+    "@zenweb/grid": "../zenweb-grid",
     "@zenweb/mysql": "^1.2.1",
     "@zenweb/orm": "^1.0.0",
     "debug": "^4.3.2",
+    "moment": "^2.29.1",
     "mysql2": "^2.3.0",
     "zenorm": "^2.2.0",
     "zenweb": "^2.1.0"
