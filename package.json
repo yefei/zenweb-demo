@@ -16,14 +16,18 @@
   "dependencies": {
     "@zenweb/api": "^2.0.0",
     "@zenweb/cors": "^2.0.0",
-    "@zenweb/grid": "../zenweb-grid",
+    "@zenweb/form": "^1.15.1",
+    "@zenweb/grid": "^1.0.2",
+    "@zenweb/messagecode": "^1.0.1",
     "@zenweb/mysql": "^1.2.1",
     "@zenweb/orm": "^1.0.0",
     "debug": "^4.3.2",
     "moment": "^2.29.1",
+    "mysql-easy-query": "^2.0.0",
     "mysql2": "^2.3.0",
+    "sql-easy-builder": "^1.8.0",
     "zenorm": "^2.2.0",
-    "zenweb": "^2.1.0"
+    "zenweb": "^2.1.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

@@ -15,9 +15,10 @@ export const app = create({
   sentry: process.env.SENTRY_DSN ? { dsn: process.env.SENTRY_DSN } : null,
   // metric: {},
   cors: { origin: '*' },
-  validation: {},
   mysql: dbConfig.mysql,
+  messageCode: {},
   orm: {},
+  form: {},
   body: {
     multipart: true, // 上传文件支持
   } 
