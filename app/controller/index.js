@@ -24,7 +24,7 @@ router.get('/grid', async ctx => {
   const grid = new Grid(ctx.core);
   grid.column('id').label('ID').sortable();
   grid.column('name').label('姓名');
-  grid.column('birthday').label('生日');
+  grid.column('birthday').label('生日').render(value => value ? moment(value).format('YYYY-MM-DD') : '无');
   grid.column('created_at').label('注册日期').sortable();
   grid.filter('age', fields.select('年龄段').choices([
     { label: '毛蛋', value: 0 },
