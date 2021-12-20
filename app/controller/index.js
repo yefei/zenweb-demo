@@ -21,7 +21,7 @@ function ageRange(min, max) {
 }
 
 router.get('/grid', async ctx => {
-  const grid = new Grid(ctx.core);
+  const grid = new Grid(ctx);
   grid.column('id').label('ID').sortable();
   grid.column('name').label('姓名');
   grid.column('birthday').label('生日').render(value => value ? moment(value).format('YYYY-MM-DD') : '无');
@@ -39,8 +39,8 @@ router.get('/grid', async ctx => {
     { birthday: ageRange(40, 55) },
     { birthday: ageRange(55, 100) },
   ][value]);
-  grid.filter('created_at', fields.date('注册日期'));
+  grid.filter('created_at', fields.dateRange('注册日期').end(new Date())).where(value => ({ created_at: { $between: value } }));
   grid.filter('search', fields.trim('关键词搜索')).where(value => ({ name: { $like: `%${value}%` } }));
-  grid.setOrder('-id').query(ctx);
+  grid.setOrder('-id');
   ctx.success(await grid.fetch(ctx.model.user.find()));
 });

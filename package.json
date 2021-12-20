@@ -16,8 +16,8 @@
   "dependencies": {
     "@zenweb/api": "^2.0.0",
     "@zenweb/cors": "^2.0.0",
-    "@zenweb/form": "^1.15.1",
-    "@zenweb/grid": "^1.1.0",
+    "@zenweb/form": "^2.2.3",
+    "@zenweb/grid": "^1.2.1",
     "@zenweb/messagecode": "^1.0.1",
     "@zenweb/mysql": "^1.2.1",
     "@zenweb/orm": "^1.0.0",
