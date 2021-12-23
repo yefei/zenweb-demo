@@ -1,5 +1,5 @@
 import { create } from 'zenweb';
-import dbConfig from './config/db.js';
+import dbConfig from './config/db';
 
 export const app = create({
   core: {
@@ -8,20 +8,19 @@ export const app = create({
   api: {
     failCode: 500,
     failStatus: 200,
-    success(data) {
+    success(ctx, data) {
       return { code: 200, data };
-    },
+    }
   },
+});
+
+/*
   sentry: process.env.SENTRY_DSN ? { dsn: process.env.SENTRY_DSN } : null,
-  // metric: {},
   cors: { origin: '*' },
   mysql: dbConfig.mysql,
   messageCode: {},
   orm: {},
   form: {},
-  body: {
-    multipart: true, // 上传文件支持
-  } 
-});
+  */
 
 app.start();

@@ -1,7 +1,7 @@
 import { Router } from 'zenweb';
 import { Grid } from '@zenweb/grid';
 import { fields } from '@zenweb/form';
-import moment from 'moment';
+import * as moment from 'moment';
 export const router = new Router();
 
 /**
@@ -11,7 +11,11 @@ router.get('/', async ctx => {
   ctx.success('Hello ZenWeb!');
 });
 
-function ageRange(min, max) {
+router.get('/error', async ctx => {
+  throw new Error('ERROR');
+});
+
+function ageRange(min: number, max: number) {
   return {
     $between: [
       moment().subtract(max, 'y').format('YYYY-MM-DD'),
@@ -39,7 +43,7 @@ router.get('/grid', async ctx => {
     { birthday: ageRange(40, 55) },
     { birthday: ageRange(55, 100) },
   ][value]);
-  grid.filter('created_at', fields.dateRange('注册日期').end(new Date())).where(value => ({ created_at: { $between: value } }));
+  grid.filter('created_at', fields.dateRange('注册日期').end(new Date().toDateString())).where(value => ({ created_at: { $between: value } }));
   grid.filter('search', fields.trim('关键词搜索')).where(value => ({ name: { $like: `%${value}%` } }));
   grid.setOrder('-id');
   ctx.success(await grid.fetch(ctx.model.user.find()));

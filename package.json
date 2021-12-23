@@ -1,37 +1,32 @@
 {
   "name": "webapp",
-  "type": "module",
   "private": true,
   "main": "app/index.js",
+  "types": "./typings/index.ts",
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
     "start": "node app",
-    "dev": "cross-env NODE_ENV=development APP_ENV=dev DEBUG=*,-zenweb:metric nodemon app"
-  },
-  "nodemonConfig": {
-    "ignore": [
-      "**/typings/**"
-    ]
+    "clean": "tsc --build --clean",
+    "build": "yarn clean && tsc",
+    "dev-node": "cross-env NODE_ENV=development APP_ENV=dev DEBUG=*,-koa-router node --enable-source-maps app",
+    "dev": "zenweb-service-types && tsc-watch --onSuccess 'yarn dev-node'"
   },
   "dependencies": {
-    "@zenweb/api": "^2.0.0",
-    "@zenweb/cors": "^2.0.0",
+    "@zenweb/cors": "^2.3.0",
     "@zenweb/form": "^2.2.3",
     "@zenweb/grid": "^1.2.1",
-    "@zenweb/messagecode": "^1.0.1",
     "@zenweb/mysql": "^1.2.1",
     "@zenweb/orm": "^1.0.0",
     "debug": "^4.3.2",
     "moment": "^2.29.1",
     "mysql-easy-query": "^2.0.0",
     "mysql2": "^2.3.0",
-    "sql-easy-builder": "^1.8.0",
+    "sql-easy-builder": "^2.0.2",
     "zenorm": "^2.2.0",
-    "zenweb": "^2.1.1"
+    "zenweb": "^2.3.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "eslint": "^7.32.0",
-    "nodemon": "^2.0.12"
+    "tsc-watch": "^4.6.0",
+    "typescript": "^4.5.4"
   }
 }

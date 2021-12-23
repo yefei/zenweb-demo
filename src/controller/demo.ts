@@ -7,4 +7,3 @@ export const router = new Router({ prefix: '/demo' });
 router.get('/', async ctx => {
   ctx.success(ctx.service.demoService.sayHello());
 });
-
