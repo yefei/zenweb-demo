@@ -7,7 +7,7 @@
 yarn dbgen
 ```
 
-编辑 app/config/db.js 修改项目数据库配置信息
+编辑 src/config/db.ts 修改项目数据库配置信息
 
 ## 启动开发环境
 

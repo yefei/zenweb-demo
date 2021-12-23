@@ -227,18 +227,18 @@
     "@koa/cors" "^3.1.0"
     "@types/koa__cors" "^3.1.0"
 
-"@zenweb/form@^2.2.3":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@zenweb/form/-/form-2.3.1.tgz#fb2017830f3cc25fdbd87fc7b30aafadc1dc1f35"
-  integrity sha512-VheOnh2cfvZpmbVpToqYXEwfBsOyySyK4IGm8ToYl2MGY4DFAJ7k8wbTluyAcf47sjE5oBU/7C/Xh2drmFAk4w==
+"@zenweb/form@^2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@zenweb/form/-/form-2.3.2.tgz#11fe9ac690c3ce793e5927a5827488d9b93b23c2"
+  integrity sha512-oxXqP1zNnN6yScVJ2+sJAV9grvA/svOrKpacUv1DNi4n52ILcCB9mcHlE4zSLCtySlkPhG/87dp9c2Tf/LNpPA==
   dependencies:
     moment "^2.29.1"
     typecasts "^1.9.2"
 
-"@zenweb/grid@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@zenweb/grid/-/grid-1.2.1.tgz#4359121a8ade77c95e67dff1a7e113617caa5946"
-  integrity sha512-QtvMByZJugUVZbeZiqoKMYdwiFPV/G9fnti5mg0fhfO251WW/ObEbb9IMfXv0dGW4CQ8KzSCKxlET3pgl9wmBA==
+"@zenweb/grid@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@zenweb/grid/-/grid-2.3.0.tgz#9d5fed1bb9fa0c50ae1ddca5a94d4bd6d42501a0"
+  integrity sha512-601tZXtc9cTpBsskkTNM2cVn95UkJx0AYNLf1gzNBmr9EI2xGqBtqJ1bk6U0LhyUFBeLmQi7xiNzOxtzDFCCcQ==
 
 "@zenweb/helper@^2.3.0":
   version "2.3.0"
@@ -264,12 +264,21 @@
   resolved "https://registry.yarnpkg.com/@zenweb/meta/-/meta-2.3.0.tgz#722c91447d5a734b94dce9e8893a5311372b4d02"
   integrity sha512-QRjMmYohFtCFoEnooxz2pEORO6UkY7/Ej5NbD8/QUpTwhuml/Nvy1RvetiOcuS5apD0QO/nLUkLYvVMQTt3lHA==
 
-"@zenweb/mysql@^1.2.1", "@zenweb/mysql@^1.4.0":
+"@zenweb/mysql@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@zenweb/mysql/-/mysql-1.4.0.tgz#3d69fe10dc7422e025a8b253c3b18d1cfb302b88"
   integrity sha512-FBfh1amzQL77Cjyvc+U71TbklcCAayJNjt2tTlGvsw7OOTFeTSKp76LIocBAdE2B4KOnF5UcX3VegwzDmKHsSg==
   dependencies:
     debug "^4.3.1"
+
+"@zenweb/mysql@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@zenweb/mysql/-/mysql-2.3.0.tgz#03440dfa646b1b155ed3e11db39ecc749314271e"
+  integrity sha512-s4wqoRZoMTaED/uFsQSNaicz+o07llTOb1ZC90SDVmgumEl6NkaazmFgQ9A3OMhhIV+lxN6wLIiRmvBWksZO6g==
+  dependencies:
+    mysql-easy-query "^2.0.0"
+    mysql2 "^2.3.3"
+    sql-easy-builder "^2.0.2"
 
 "@zenweb/orm@^1.0.0":
   version "1.0.0"
@@ -804,7 +813,7 @@ mysql-easy-query@^2.0.0:
   dependencies:
     debug "^4.3.1"
 
-mysql2@^2.3.0:
+mysql2@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/mysql2/-/mysql2-2.3.3.tgz#944f3deca4b16629052ff8614fbf89d5552545a0"
   integrity sha512-wxJUev6LgMSgACDkb/InIFxDprRa6T95+VEoR+xPvtngtccNH2dGjEB/fVZ8yg1gWv1510c9CvXuJHi5zUm0ZA==

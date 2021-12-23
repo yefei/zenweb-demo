@@ -2,7 +2,6 @@
   "name": "webapp",
   "private": true,
   "main": "app/index.js",
-  "types": "./typings/index.ts",
   "scripts": {
     "start": "node app",
     "clean": "tsc --build --clean",
@@ -12,14 +11,13 @@
   },
   "dependencies": {
     "@zenweb/cors": "^2.3.0",
-    "@zenweb/form": "^2.2.3",
-    "@zenweb/grid": "^1.2.1",
-    "@zenweb/mysql": "^1.2.1",
+    "@zenweb/form": "^2.3.2",
+    "@zenweb/grid": "^2.3.0",
+    "@zenweb/mysql": "^2.3.0",
     "@zenweb/orm": "^1.0.0",
     "debug": "^4.3.2",
     "moment": "^2.29.1",
     "mysql-easy-query": "^2.0.0",
-    "mysql2": "^2.3.0",
     "sql-easy-builder": "^2.0.2",
     "zenorm": "^2.2.0",
     "zenweb": "^2.3.0"
