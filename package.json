@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@zenweb/cors": "^2.3.0",
-    "@zenweb/form": "^2.3.2",
+    "@zenweb/form": "^2.3.3",
     "@zenweb/grid": "^2.3.0",
     "@zenweb/mysql": "^2.3.0",
     "@zenweb/orm": "^1.0.0",
@@ -20,7 +20,7 @@
     "mysql-easy-query": "^2.0.0",
     "sql-easy-builder": "^2.0.2",
     "zenorm": "^2.2.0",
-    "zenweb": "^2.3.0"
+    "zenweb": "^2.3.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

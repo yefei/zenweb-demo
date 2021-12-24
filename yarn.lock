@@ -86,9 +86,9 @@
     "@types/ms" "*"
 
 "@types/express-serve-static-core@^4.17.18":
-  version "4.17.26"
-  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.26.tgz#5d9a8eeecb9d5f9d7fc1d85f541512a84638ae88"
-  integrity sha512-zeu3tpouA043RHxW0gzRxwCHchMgftE8GArRsvYT0ByDMbn19olQHx5jLue0LxWY6iYtXb7rXmuVtSkhy9YZvQ==
+  version "4.17.27"
+  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.27.tgz#7a776191e47295d2a05962ecbb3a4ce97e38b401"
+  integrity sha512-e/sVallzUTPdyOTiqi8O8pMdBBphscvI6E4JYaKlja4Lm+zh7UFSSdW5VMkRbhDtmrONqOUHOXRguPsDckzxNA==
   dependencies:
     "@types/node" "*"
     "@types/qs" "*"
@@ -105,9 +105,9 @@
     "@types/serve-static" "*"
 
 "@types/formidable@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@types/formidable/-/formidable-2.0.0.tgz#7100d6121871c6300e16c89cf4002f3b66157359"
-  integrity sha512-oqgX7AxK7R+NxI2kEGHV2ZqKHJ2MgGOSp2rZxpq2DMrX59h5FVkEJpUhscvqMktDCY3CQ1uqIdC+heVmJ0xTbg==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/formidable/-/formidable-2.0.1.tgz#081be8a4fe73c574b890533d7d864f7ea14b04a5"
+  integrity sha512-8bSEqY+gGRoZmRH3R91O6B80LQ3ilG3g81yFqJyOeYJf9qKZWbK9lxLYP/fO3napDPZwIXF9x5Rmwn9uZxkzJw==
   dependencies:
     "@types/node" "*"
 
@@ -172,9 +172,9 @@
   integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
 "@types/node@*":
-  version "17.0.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.3.tgz#4b086e316ed4504f49bd78135d48642bf50aa135"
-  integrity sha512-bAKB1GcA28FR/D8HHQ5U4FYk7nvoZdp7TZSy9oIyQ8gpYCzpeESa3LCK2TbeocXic7GwIXCkCItJg0DttO3ZaQ==
+  version "17.0.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.4.tgz#fec0ce0526abb6062fd206d72a642811b887a111"
+  integrity sha512-6xwbrW4JJiJLgF+zNypN5wr2ykM9/jHcL7rQ8fZe2vuftggjzZeRSM4OwRc6Xk8qWjwJ99qVHo/JgOGmomWRog==
 
 "@types/qs@*":
   version "6.9.7"
@@ -199,10 +199,10 @@
   resolved "https://registry.yarnpkg.com/@zenweb/api/-/api-2.3.2.tgz#ec294aec4c3679d3b26d7319ec2a1d885d98b0b7"
   integrity sha512-UPOXuP/YaXb4T0rH4WzNWj3BhAoRtvN5ETdxhN2j++c50OnxDk8XOKXmkAfJNGkjvXwNpOxsot2AFAUI0WN6sQ==
 
-"@zenweb/body@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@zenweb/body/-/body-2.3.0.tgz#42fe90fcffe5e2c3530a9c3a3f5acffad89a4641"
-  integrity sha512-l9pS68Windx1xJbs15yG4054c91Y/BfB8spoqp+PyF3ZE6fmaWvfayEhyrOJ5JS7T6AvkXNt8kmq26gfw5cQhQ==
+"@zenweb/body@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@zenweb/body/-/body-2.3.1.tgz#e19973c22e2be9b7a3a3004cbeffe42a214ad027"
+  integrity sha512-6RqFetJWNWKRvCiY56inox5zUFMkP0QRohRXqxtTZCdNfL5zma3Um+PLo8L9aem1LH8M6S62wHyu8QYLSlSz4g==
   dependencies:
     "@types/formidable" "^2.0.0"
     bytes "^3.1.1"
@@ -227,10 +227,10 @@
     "@koa/cors" "^3.1.0"
     "@types/koa__cors" "^3.1.0"
 
-"@zenweb/form@^2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@zenweb/form/-/form-2.3.2.tgz#11fe9ac690c3ce793e5927a5827488d9b93b23c2"
-  integrity sha512-oxXqP1zNnN6yScVJ2+sJAV9grvA/svOrKpacUv1DNi4n52ILcCB9mcHlE4zSLCtySlkPhG/87dp9c2Tf/LNpPA==
+"@zenweb/form@^2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@zenweb/form/-/form-2.3.3.tgz#1a8c74603dec9df28f7ad27d1be81737a6ca7c68"
+  integrity sha512-uNCf6CBp5QPkBBST43ADwY+zu8ZPv9R0joWy87AC8Vopoq5AweqI7cGAJ6JwCqrEhpnWZtzZDkQZFrUV5/xHtQ==
   dependencies:
     moment "^2.29.1"
     typecasts "^1.9.2"
@@ -296,10 +296,10 @@
     "@types/koa__router" "^8.0.11"
     globby "11.0.4"
 
-"@zenweb/service@^2.3.2":
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/@zenweb/service/-/service-2.3.5.tgz#402e23607c998186878e9bef613c93e68f780732"
-  integrity sha512-faEDB07bjvLuRbyJvFX8vMl5YhU5vBhZ01YuZvJ9VAfirEv1SGaUljndT1289KtnOhy07h9E18UXf+Kyt9BNOQ==
+"@zenweb/service@^2.3.5":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@zenweb/service/-/service-2.4.1.tgz#fb87f55f0d8811ee18610b16a290d13efd2aced0"
+  integrity sha512-Ds9wVpNMgV1GmRFWrUWU/oj2IHs73aM1KTOvJQpStD/vc81Y6t6bO7jvFLZOb++ecG4+AOEBwFVKzVf5kD1rpA==
   dependencies:
     debug "^4.3.3"
     globby "11.0.4"
@@ -1138,17 +1138,17 @@ zenorm@^2.2.0:
   resolved "https://registry.yarnpkg.com/zenorm/-/zenorm-2.2.0.tgz#cc5b7dc1ee1c5695d48450ac47ed3f88c713122d"
   integrity sha512-jKM/iIv+Hcuod3WxUrDaGIH7PZUMoXLiJivIqXMZTiFRRkITkF/uY+IDw+iJZhJl7AbpG1Om2S1u2daTsgUHvg==
 
-zenweb@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/zenweb/-/zenweb-2.3.0.tgz#f59b2cada0aabdadaa8e1f6e38c8c475f40b3198"
-  integrity sha512-HrcHDN51uHm+rUPbJAf2keI0QaOOHAJgmSKTOhYH5lM4+j6nLZX4kmyq5VlsC4EBHkWf4ydtias2lzACVxUQkg==
+zenweb@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/zenweb/-/zenweb-2.3.1.tgz#d4c131aa4833af454edb910546a6765a09ae6e2c"
+  integrity sha512-CoiqAJL9MscUSv7SFZ42L7RGOe14CZrlfBB+Rb86e3yFOyxzuscQKRk5oC5F7Mn3HKJqumcXnPcQc1s20RhdeQ==
   dependencies:
     "@zenweb/api" "^2.3.2"
-    "@zenweb/body" "^2.3.0"
+    "@zenweb/body" "^2.3.1"
     "@zenweb/core" "^2.3.2"
     "@zenweb/helper" "^2.3.0"
     "@zenweb/log" "^2.3.0"
     "@zenweb/messagecode" "^2.3.0"
     "@zenweb/meta" "^2.3.0"
     "@zenweb/router" "^2.3.0"
-    "@zenweb/service" "^2.3.2"
+    "@zenweb/service" "^2.3.5"
