@@ -14,10 +14,10 @@ function ageRange(min: number, max: number) {
 }
 
 router.get('/grid', async ctx => {
-  const grid = new Grid(ctx);
+  const grid = new Grid(ctx.core);
   grid.column('id').label('ID').sortable();
   grid.column('name').label('姓名');
-  grid.column('birthday').label('生日').render(value => value ? moment(value).format('YYYY-MM-DD') : '无');
+  grid.column('birthday').label('生日').formatter(row => row.birthday ? moment(row.birthday).format('YYYY-MM-DD') : '无');
   grid.column('created_at').label('注册日期').sortable();
   grid.filter('age', fields.select('年龄段').choices([
     { label: '毛蛋', value: 0 },
@@ -35,5 +35,5 @@ router.get('/grid', async ctx => {
   grid.filter('created_at', fields.dateRange('注册日期').end(new Date().toDateString())).where(value => ({ created_at: { $between: value } }));
   grid.filter('search', fields.trim('关键词搜索')).where(value => ({ name: { $like: `%${value}%` } }));
   grid.setOrder('-id');
-  ctx.success(await grid.fetch(ctx.model.user.find()));
+  // ctx.success(await grid.fetch(ctx.model.user.find()));
 });

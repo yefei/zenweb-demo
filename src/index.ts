@@ -6,9 +6,6 @@ import cors from '@zenweb/cors';
 import dbConfig from './config/db';
 
 export const app = create({
-  core: {
-    proxy: true,
-  },
   api: {
     failCode: 500,
     failStatus: 200,
@@ -20,13 +17,12 @@ export const app = create({
 
 app.setup(cors({ origin: '*' }));
 app.setup(mysql(dbConfig.mysql));
+// app.setup(orm());
 app.setup(form());
 app.setup(grid());
 
 /*
   sentry: process.env.SENTRY_DSN ? { dsn: process.env.SENTRY_DSN } : null,
-  orm: {},
-
   */
 
 app.start();

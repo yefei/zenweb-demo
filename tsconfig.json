@@ -10,6 +10,7 @@
     "sourceMap": true,
     "removeComments": true,
     "declaration": false,
+    "allowJs": true,
     "outDir": "./app"
   },
   "exclude": [
