@@ -4,7 +4,7 @@
   "main": "app/index.js",
   "scripts": {
     "start": "node app",
-    "clean": "tsc --build --clean",
+    "clean": "rm -fr app",
     "build": "yarn clean && tsc",
     "dbgen": "zenorm gen .dbconfig.json",
     "dev-node": "cross-env NODE_ENV=development APP_ENV=dev DEBUG=* node --enable-source-maps app",
