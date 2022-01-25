@@ -14,13 +14,12 @@
     "@zenweb/cors": "^2.3.0",
     "@zenweb/form": "^2.6.0",
     "@zenweb/grid": "^2.11.1",
-    "@zenweb/mysql": "^2.3.0",
+    "@zenweb/mysql": "^2.4.0",
+    "@zenweb/orm": "^2.4.1",
     "debug": "^4.3.2",
     "moment": "^2.29.1",
-    "mysql-easy-query": "^2.0.0",
-    "sql-easy-builder": "^2.0.2",
-    "zenorm": "^1.4.4",
-    "zenweb": "^2.4.1"
+    "zenorm": "^3.0.5",
+    "zenweb": "^2.4.4"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

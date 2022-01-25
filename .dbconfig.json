@@ -3,7 +3,5 @@
   "port": 3306,
   "user": "root",
   "password": "",
-  "database": "test",
-  "typingFile": "src/model/index.d.ts",
-  "modelsFile": "src/model/index.js"
+  "database": "test"
 }

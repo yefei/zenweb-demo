@@ -1,9 +1,12 @@
+import './_typings/service';
 import { create } from 'zenweb';
 import mysql from '@zenweb/mysql';
 import form from '@zenweb/form';
 import grid from '@zenweb/grid';
 import cors from '@zenweb/cors';
+import orm from '@zenweb/orm';
 import dbConfig from './config/db';
+import { Queries } from './model';
 
 export const app = create({
   api: {
@@ -17,12 +20,8 @@ export const app = create({
 
 app.setup(cors({ origin: '*' }));
 app.setup(mysql(dbConfig.mysql));
-// app.setup(orm());
+app.setup(orm({ Queries }));
 app.setup(form());
 app.setup(grid());
-
-/*
-  sentry: process.env.SENTRY_DSN ? { dsn: process.env.SENTRY_DSN } : null,
-  */
 
 app.start();

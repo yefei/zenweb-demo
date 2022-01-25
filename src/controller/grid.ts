@@ -35,5 +35,5 @@ router.get('/grid', async ctx => {
   grid.filter('created_at', fields.dateRange('注册日期').end(new Date().toDateString())).where(value => ({ created_at: { $between: value } }));
   grid.filter('search', fields.trim('关键词搜索')).where(value => ({ name: { $like: `%${value}%` } }));
   grid.setOrder('-id');
-  // ctx.success(await grid.fetch(ctx.model.user.find()));
+  ctx.success(await grid.fetch(ctx.model.user.find()));
 });
