@@ -3,26 +3,26 @@
   "private": true,
   "main": "app/index.js",
   "scripts": {
-    "start": "node app",
-    "clean": "rm -fr app",
-    "build": "yarn clean && tsc",
-    "dbgen": "zenorm gen .dbconfig.json",
-    "dev-node": "cross-env NODE_ENV=development APP_ENV=dev DEBUG=* node --enable-source-maps app",
+    "start": "node --enable-source-maps app",
+    "build": "rimraf app && zenweb-service-types && tsc",
+    "dbgen": "zenorm gen .dbgen.json",
+    "dev-node": "cross-env NODE_ENV=development DEBUG=*,-zenweb:core:module:metric,-koa-router node --enable-source-maps app",
     "dev": "zenweb-service-types && tsc-watch --onSuccess 'yarn dev-node'"
   },
   "dependencies": {
     "@zenweb/cors": "^2.3.0",
-    "@zenweb/form": "^2.6.0",
-    "@zenweb/grid": "^2.11.1",
-    "@zenweb/mysql": "^2.4.0",
+    "@zenweb/form": "^2.6.1",
+    "@zenweb/grid": "^2.12.1",
+    "@zenweb/mysql": "^2.4.1",
     "@zenweb/orm": "^2.4.1",
     "debug": "^4.3.2",
     "moment": "^2.29.1",
-    "zenorm": "^3.0.5",
-    "zenweb": "^2.4.4"
+    "zenorm": "^3.5.0",
+    "zenweb": "^2.4.6"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "rimraf": "^3.0.2",
     "tsc-watch": "^4.6.0",
     "typescript": "^4.5.4"
   }
