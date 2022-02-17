@@ -17,8 +17,8 @@
     "@zenweb/orm": "^2.4.1",
     "debug": "^4.3.2",
     "moment": "^2.29.1",
-    "zenorm": "^3.5.0",
-    "zenweb": "^2.4.6"
+    "zenorm": "^3.7.3",
+    "zenweb": "^2.4.10"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

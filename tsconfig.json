@@ -7,12 +7,9 @@
       "ES2019"
     ],
     "module": "commonjs",
-    "noImplicitAny": true,
-    "preserveConstEnums": true,
+    "strict": true,
+    "strictNullChecks": false,
     "sourceMap": true,
-    "removeComments": true,
-    "declaration": false,
-    "allowJs": true,
     "outDir": "./app"
   },
   "exclude": [

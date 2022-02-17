@@ -1,4 +1,4 @@
-import './_typings/service';
+import './service/_typing';
 import { create } from 'zenweb';
 import mysql from '@zenweb/mysql';
 import form from '@zenweb/form';
