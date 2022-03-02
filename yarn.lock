@@ -249,10 +249,10 @@
   dependencies:
     lodash "^4.17.21"
 
-"@zenweb/helper@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@zenweb/helper/-/helper-2.7.0.tgz#9ab08c4de874bb5c49897339e015088c20caca9a"
-  integrity sha512-FxZLRsaKO2xB0UtDZPs2MR0nNz/4zm3xU53XGXXPS09ZsU3DndnkBSbIyi5OBHi0iFtzUEmvMkotnAKutTrV6Q==
+"@zenweb/helper@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@zenweb/helper/-/helper-2.8.2.tgz#1385a49e2b81f104d8eae26acd30c477e352a901"
+  integrity sha512-XtiMFGcYWwcfB/i4BTXFQeg8Un3F7bm6it6W717LHdEiF9WHn4fEYSIhlUQJMnxNYm/aVwFYeIqr5D0qgbGg6g==
   dependencies:
     typecasts "^2.3.0"
 
@@ -1097,12 +1097,7 @@ split@0.3:
   dependencies:
     through "2"
 
-sql-easy-builder@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/sql-easy-builder/-/sql-easy-builder-2.2.0.tgz#86ff7de2f1c4298782e6f9fa57188207d980eee5"
-  integrity sha512-uWc44vjLKiWHyaRZenwcCSQUziGq32hBL55tIMH/Z1JMMxwc0bKWFZJg6UzREKQFZN0GtZDwUK+LORvb3eYs8g==
-
-sql-easy-builder@^2.3.2:
+sql-easy-builder@^2.2.0, sql-easy-builder@^2.3.2:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/sql-easy-builder/-/sql-easy-builder-2.4.1.tgz#ede14ae403060a3c9316245d7371ea6c379b08c0"
   integrity sha512-BH/zl9TKv/f8yFFdWLWUyoFNZaGeCB2v3poTH2pb0Gildi/a1NHbayVQvgdP82GUrSztmzlEhOebPmPheGzxxQ==
@@ -1247,15 +1242,15 @@ zenorm@^3.7.8:
     snake-case "^3.0.4"
     sql-easy-builder "^2.3.2"
 
-zenweb@^2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/zenweb/-/zenweb-2.6.2.tgz#43d4d6b20e6ced8767afa3062d44441050fa860a"
-  integrity sha512-0MZJnavKPG1IWSsKowSpvdOnXDA/F37zlP5amLIWPI07MRuEPLodD/RnFE2utO9ndiF6OdoNGXjUlbk4by3yYg==
+zenweb@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/zenweb/-/zenweb-2.7.0.tgz#d9f4797eff73f12d28e85f3c64460ccd14d3be8f"
+  integrity sha512-X+d9GwcbMoFHsvZlCYv2wBmhe+2tKyEQn19DAIZpeUIyBaccmtbTFhxIzcvGwHapvgY18dupoxRWGYKFcND78Q==
   dependencies:
     "@zenweb/api" "^2.3.4"
     "@zenweb/body" "^2.3.1"
     "@zenweb/core" "^2.4.1"
-    "@zenweb/helper" "^2.7.0"
+    "@zenweb/helper" "^2.8.2"
     "@zenweb/log" "^2.3.0"
     "@zenweb/messagecode" "^2.3.0"
     "@zenweb/meta" "^2.3.2"

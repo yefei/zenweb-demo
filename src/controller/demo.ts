@@ -9,6 +9,26 @@ router.get('/', async ctx => {
 });
 
 /**
+ * @api {get} /demo/helper
+ */
+router.get('/helper', async ctx => {
+  // 注意观察data结果类型
+  const data = ctx.helper.query({
+    id: '!int',
+    num: 'int',
+    strlist: 'string[]',
+    age: {
+      type: 'int',
+      validate: {
+        gt: 10,
+        lt: 100,
+      }
+    }
+  });
+  ctx.success(data);
+});
+
+/**
  * 上传演示
  */
 router.post('/upload', async ctx => {
