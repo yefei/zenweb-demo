@@ -201,6 +201,14 @@
     "@types/mime" "^1"
     "@types/node" "*"
 
+"@zenorm/mysql@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@zenorm/mysql/-/mysql-1.0.0.tgz#c50106e1bdca9d8c338bb52cbcc37c5f7baf8f01"
+  integrity sha512-WRGD8XN2M2ZnvnaucMMdYUAtHaavHIzbcoSuOrLP/VC6kK9wxULG4DM75Ax4vwiMHa9aGWty6DfHtamD9Wbs5Q==
+  dependencies:
+    mysql "^2.18.1"
+    mysql-easy-query "^3.3.0"
+
 "@zenweb/api@^2.3.4":
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/@zenweb/api/-/api-2.3.4.tgz#55db79cdaf95c1fc7a0944dd8206feb4cc7ce05d"
