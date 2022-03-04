@@ -7,7 +7,7 @@
     "build": "rimraf app && zenweb-service-types && tsc",
     "dbgen": "zenorm gen .dbgen.json",
     "dev-node": "cross-env NODE_ENV=development DEBUG=*,-zenweb:core:module:metric,-koa-router node --enable-source-maps app",
-    "dev": "zenweb-service-types && tsc-watch --onSuccess \"yarn dev-node\""
+    "dev": "rimraf app && zenweb-service-types && tsc-watch --onSuccess \"yarn dev-node\""
   },
   "dependencies": {
     "@zenweb/cors": "^2.3.0",
