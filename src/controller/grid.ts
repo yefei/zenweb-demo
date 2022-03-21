@@ -33,7 +33,11 @@ router.get('/grid', async ctx => {
     { birthday: ageRange(55, 100) },
   ][value]);
   grid.filter('created_at', fields.dateRange('注册日期').end(new Date().toDateString())).where(value => ({ created_at: { $between: value } }));
-  grid.filter('search', fields.trim('关键词搜索')).where(value => ({ name: { $like: `%${value}%` } }));
+  grid.filter('search', fields.text('关键词搜索').type('trim')).where(value => ({ name: { $like: `%${value}%` } }));
+  grid.filter('cas', fields.cascader('级连选择').choices([
+    { label: '第一层', value: 1 },
+    { label: '第二层', value: 2, parent: 1 },
+  ]));
   grid.setOrder('-id');
   ctx.success(await grid.fetch(ctx.model.user.find()));
 });
