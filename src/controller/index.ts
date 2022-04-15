@@ -1,13 +1,16 @@
-import { Router } from 'zenweb';
-export const router = new Router();
+import { Context, mapping } from "zenweb";
 
-/**
- * @api {get} / 用于部署状态检查
- */
-router.get('/', async ctx => {
-  ctx.success('Hello ZenWeb!');
-});
+export class Index {
+  /**
+   * @api {get} / 用于部署状态检查
+   */
+  @mapping()
+  index(ctx: Context) {
+    ctx.success("Hello ZenWeb!");
+  }
 
-router.get('/error', async ctx => {
-  throw new Error('ERROR');
-});
+  @mapping()
+  error(ctx: Context) {
+    throw new Error("ERROR");
+  }
+}

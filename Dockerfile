@@ -1,8 +1,8 @@
-FROM node:12-slim AS build
+FROM node:16-slim AS build
 COPY . .
 RUN yarn && yarn run build && rm -fr node_modules && yarn --production
 
-FROM node:12-slim
+FROM node:16-slim
 WORKDIR /home/work
 
 ENV NODE_ENV=production
