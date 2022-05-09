@@ -14,8 +14,7 @@ function ageRange(min: number, max: number) {
 
 export class GridController {
   @mapping()
-  async grid(ctx: Context) {
-    const grid = new Grid(ctx.core);
+  async grid(ctx: Context, grid: Grid) {
     grid.column("id").label("ID").sortable();
     grid.column("name").label("姓名");
     grid
