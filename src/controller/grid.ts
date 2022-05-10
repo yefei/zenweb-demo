@@ -60,7 +60,10 @@ export class GridController {
         { label: "第一层", value: 1 },
         { label: "第二层", value: 2, parent: 1 },
       ])
-    );
+    ).where(v => {
+      console.log('查询处理');
+      return {};
+    });
     grid.setOrder("-id");
     ctx.success(await grid.fetch(ctx.model.user.find()));
   }
