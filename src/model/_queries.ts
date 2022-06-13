@@ -1,6 +1,6 @@
 // zenorm 自动生成文件
 // 请不要修改此文件，因为此文件在每次重新生成数据库结构时会被覆盖
-// create at: 2022-3-2 11:52:55 ├F10: AM┤
+// create at: 2022/5/13 下午3:58:13
 // create by: yefei@-
 // database: test
 import { Query, createRepositoryQuery } from 'zenorm';

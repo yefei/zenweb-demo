@@ -17,6 +17,7 @@ export class GridController {
   async grid(ctx: Context, grid: Grid) {
     grid.column("id").label("ID").sortable();
     grid.column("name").label("姓名");
+    grid.column("profile.edu").label("教育");
     grid
       .column("birthday")
       .label("生日")
@@ -65,6 +66,6 @@ export class GridController {
       return {};
     });
     grid.setOrder("-id");
-    ctx.success(await grid.fetch(ctx.model.user.find()));
+    ctx.success(await grid.fetch(ctx.model.user.find().join('profile')));
   }
 }
