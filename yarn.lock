@@ -202,15 +202,15 @@
     mysql-easy-query "^3.4.0"
     mysql2 "^2.3.3"
 
-"@zenweb/api@^2.3.4":
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/@zenweb/api/-/api-2.3.4.tgz#55db79cdaf95c1fc7a0944dd8206feb4cc7ce05d"
-  integrity sha512-xNKDzzH19+0xKoaMfW4y1jrZpa9wPKO9xbJtty9LvWRfVnQ49Lax8NQHfYtLh0+Wpe/lMTifVORRbJeoseycFQ==
+"@zenweb/api@^2.3.5":
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/@zenweb/api/-/api-2.3.5.tgz#78f418162963e2d1e14f4b1d7bc1803cc154fc41"
+  integrity sha512-a2KAZ8D1cOPifkzvur3dzJBx5mKbzHLgQeRydQ3V+Rr9xlhwofLSuhyxazRkQ6luV5nZfg8oOmhi+xdbrGBcjQ==
 
-"@zenweb/body@^2.4.2":
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/@zenweb/body/-/body-2.4.2.tgz#189c898bd47a8aef7ff44f5d8b0e519338e59395"
-  integrity sha512-D0I93fkZtZeSa6VMup223PWwcODqK2qbzrHgAmphU3VCFpXplEU4vFwiBDVeOPP0NgmEDORYeHCgWwkyLr0bJA==
+"@zenweb/body@^2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@zenweb/body/-/body-2.4.3.tgz#7dab07ef074453e2fe8a1dc90faf5611326e6ee8"
+  integrity sha512-GrHZljmd8nWtka4cfNrvOB95ttT4uBBa6u0Ed2o/ShX4F+a/wK0hvCmfVgGU+LJr9DeCmmkORvdgpP+6qUnRrg==
   dependencies:
     "@types/formidable" "^2.0.0"
     bytes "^3.1.1"
@@ -218,17 +218,17 @@
     fast-xml-parser "^4.0.5"
     formidable "^2.0.1"
 
-"@zenweb/controller@^3.3.5":
-  version "3.3.5"
-  resolved "https://registry.yarnpkg.com/@zenweb/controller/-/controller-3.3.5.tgz#9fa02dbbdb6ae4d7bcff87c58aa4c2773c89636e"
-  integrity sha512-bjQfujFHdakqdcLvkmBmMdw0M+Erwolcnd3CZUwlCacNTN1chQpQ+O10W87kdNxYaR/MFY+rm8mWbeWov5cWVg==
+"@zenweb/controller@^3.3.6":
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/@zenweb/controller/-/controller-3.3.6.tgz#9ca83b4246670bd08187214d1d3fb0cd23064b7b"
+  integrity sha512-0VfYFPjogPT4jVjGHUz13URLn7TeULgwPmlIKOnkPQJNHqI6IFhfw+t1YcSHzg6ba7VWvuxPof74vpzdR4gQTg==
   dependencies:
     globby "11.0.4"
 
-"@zenweb/core@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@zenweb/core/-/core-2.4.1.tgz#25e3b613bae1f57ac95fa84f15e997c53102ad5f"
-  integrity sha512-UQZFGimZO9sqhCP0wHfQuM8Fp9eEU0BjU3eOui2QbpZCSUcjKaN7kqlOsmCpbSdRyop+Yc2A2X4mtkFjOYfumg==
+"@zenweb/core@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@zenweb/core/-/core-2.4.2.tgz#86475b58d8923ceb4a6320ed3fb962f0c61a5627"
+  integrity sha512-Sw77X89TNii+4I/VeaqN3fIwpIqZji5Gg9xJn0Wfo4Mc1Se3UlS9bF7r8lvgmc20+uRlH8T7vmamJyZsMYOFRA==
   dependencies:
     "@types/debug" "^4.1.7"
     "@types/koa" "^2.13.4"
@@ -258,10 +258,10 @@
   dependencies:
     lodash "^4.17.21"
 
-"@zenweb/helper@^2.10.0":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@zenweb/helper/-/helper-2.10.0.tgz#bdbb6fa1585b75a2043946229b0b4f4ff22f87f7"
-  integrity sha512-hPp58OSX1N2CFTXDDog7wQxaM6OXAFNuiiCyO+lzNloEEpkcdwzqlm6qnAOSLLrdUViEP+NRaaM+IizelQ1YIg==
+"@zenweb/helper@^2.10.1":
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/@zenweb/helper/-/helper-2.10.1.tgz#8540afb618a1f5c1cd529c1a17f022c3eee0dc34"
+  integrity sha512-jWL6mQMsBQCkAjm41LGGTeTggN6SSAI3V5VYR6ZaYS9ZjaRa1GG/YGnGJUEcbQDP0P4YkjZh/FHWWGOowhGItQ==
   dependencies:
     typecasts "^2.3.3"
 
@@ -1146,10 +1146,10 @@ split@0.3:
   dependencies:
     through "2"
 
-sql-easy-builder@^2.2.0, sql-easy-builder@^2.4.3:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/sql-easy-builder/-/sql-easy-builder-2.4.3.tgz#d19c4dd4516b7b17aa7a7eb7c5a345344e77b494"
-  integrity sha512-IASF7HjK93MCsX9wSIDY+8rJwb5maoRx982WPIE7B3K4f1RtjVHD8WLAjnm+BF/6/IrII8UDmxyS3BzGwnrA5g==
+sql-easy-builder@^2.2.0, sql-easy-builder@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/sql-easy-builder/-/sql-easy-builder-2.5.1.tgz#52d628d1eedf800b58aa7466ba35de79aa91f8cf"
+  integrity sha512-0yR5N6UFuET/FnYuez864E+3zHI0SLUMDTQLrjH5pXVPddyZ6KToYna6AFwGOUci2KtDZKWr6UQp5Nn1sEomVQ==
 
 sqlstring@^2.3.2:
   version "2.3.3"
@@ -1288,27 +1288,27 @@ zenlog.js@^2.0.3:
   resolved "https://registry.yarnpkg.com/zenlog.js/-/zenlog.js-2.0.3.tgz#0fe2bbbd1ece9856fa7e58a552bac53e586a4c0f"
   integrity sha512-BkO/B3gqPVo8ZhAz3TaF+bHUbwiTctY5NcLRG8RNbQuQeMHgsL2sKQtcdx1HFhKcilcitBwHDqXwNsiPxlWKNw==
 
-zenorm@^3.13.3:
-  version "3.13.3"
-  resolved "https://registry.yarnpkg.com/zenorm/-/zenorm-3.13.3.tgz#20e05b7383c50caeae880caa79bff4900917dbf4"
-  integrity sha512-5uVuI+FYk3wVipB9CRLCri2rtkLIn4t2EGbVXDxiHunCbliHF1MbZjI31wtOqf9zIKuMkwqC8t/O3U/GE8ABig==
+zenorm@^3.15.0:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/zenorm/-/zenorm-3.15.0.tgz#5e0f14fd5ad074ecea823046238729644dcc54d8"
+  integrity sha512-Di45UWMbd/Pc4XxWM2roMwyP+wH7uWrvMtdB9z3pQ/00Hk3xo2zcCXIJGSG7Bpn0En/Ft0p+e8hSe9ROD8AVHQ==
   dependencies:
     camel-case "^4.1.2"
     pascal-case "^3.1.2"
     reflect-metadata "^0.1.13"
     snake-case "^3.0.4"
-    sql-easy-builder "^2.4.3"
+    sql-easy-builder "^2.5.1"
 
-zenweb@^3.0.13:
-  version "3.0.13"
-  resolved "https://registry.yarnpkg.com/zenweb/-/zenweb-3.0.13.tgz#8111e9c6d85c82700031b81828242dbc5c6a2de5"
-  integrity sha512-e6vl5DsEyRGZt9/m557aeJJ44l2GPSK/oaSpr1lL+aKNhxBDBC/rOrHcCnCNL26c52OE4kofbZuxKxPZgJ37Uw==
+zenweb@^3.0.16:
+  version "3.0.16"
+  resolved "https://registry.yarnpkg.com/zenweb/-/zenweb-3.0.16.tgz#cbdb8945b163233d301ca112bfbe992b126053a8"
+  integrity sha512-dqzBotyL6wCZCYG74vdKP19oRBs7Dt7wBCcNRglEwNPp1eEgvWecyf4VhSd+LS2keNrS+O7vLFcevrN/Ov8UOA==
   dependencies:
-    "@zenweb/api" "^2.3.4"
-    "@zenweb/body" "^2.4.2"
-    "@zenweb/controller" "^3.3.5"
-    "@zenweb/core" "^2.4.1"
-    "@zenweb/helper" "^2.10.0"
+    "@zenweb/api" "^2.3.5"
+    "@zenweb/body" "^2.4.3"
+    "@zenweb/controller" "^3.3.6"
+    "@zenweb/core" "^2.4.2"
+    "@zenweb/helper" "^2.10.1"
     "@zenweb/inject" "^3.6.1"
     "@zenweb/log" "^2.3.0"
     "@zenweb/messagecode" "^3.0.1"
