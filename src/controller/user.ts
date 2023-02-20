@@ -1,19 +1,22 @@
 import { Context, controller, inject, mapping } from "zenweb";
 import UserService from "../service/user";
 
+/**
+ * 在这个控制器里演示最基本的增删改查
+ */
 @controller({
   prefix: "/user",
 })
 export class UserController {
-  @inject
-  userService: UserService;
+  @inject userService: UserService;
 
   /**
    * @api {get} /user
    */
   @mapping()
   async index(ctx: Context) {
-    ctx.success(await this.userService.getLastUser());
+    const user = await this.userService.getLastUser();
+    ctx.success(user);
   }
 
   /**

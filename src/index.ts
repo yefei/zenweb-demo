@@ -7,6 +7,7 @@ import orm from '@zenweb/orm';
 import dbConfig from './config/db';
 import { Queries } from './model';
 
+// 创建 zenweb 实例
 export const app = create({
   api: {
     failCode: 500,
@@ -17,10 +18,12 @@ export const app = create({
   },
 });
 
+// 加载需要使用到的模块
 app.setup(cors({ origin: '*' }));
 app.setup(mysql(dbConfig.mysql));
 app.setup(orm({ Queries }));
 app.setup(form());
 app.setup(grid());
 
+// 启动 web 服务
 app.start();

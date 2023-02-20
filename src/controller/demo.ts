@@ -1,6 +1,10 @@
 import { Context, controller, mapping } from "zenweb";
 import { DemoService } from "../service/demo_service";
 
+/**
+ * 这是一个控制器，只需 export 导出 class 即可
+ * @controller 注解是可选的
+ */
 @controller({
   prefix: "/demo",
 })

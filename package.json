@@ -11,14 +11,15 @@
   },
   "dependencies": {
     "@zenweb/cors": "^2.3.0",
-    "@zenweb/form": "^3.2.0",
-    "@zenweb/grid": "^3.0.2",
+    "@zenweb/form": "^3.5.0",
+    "@zenweb/grid": "^3.0.4",
     "@zenweb/mysql": "^2.5.0",
     "@zenweb/orm": "^2.4.1",
+    "@zenweb/view": "^2.4.1",
     "debug": "^4.3.2",
     "moment": "^2.29.1",
-    "zenorm": "^3.15.0",
-    "zenweb": "^3.0.16"
+    "zenorm": "^3.18.1",
+    "zenweb": "^3.0.22"
   },
   "devDependencies": {
     "@zenorm/mysql": "^1.0.2",

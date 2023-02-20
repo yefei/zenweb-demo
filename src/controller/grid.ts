@@ -12,6 +12,9 @@ function ageRange(min: number, max: number) {
   };
 }
 
+/**
+ * 数据表格演示，与前端组件 @zenweb/grid-vue-element 配合使用
+ */
 export class GridController {
   @mapping()
   async grid(ctx: Context, grid: Grid) {
