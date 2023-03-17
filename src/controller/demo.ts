@@ -1,4 +1,5 @@
-import { Context, controller, mapping } from "zenweb";
+import { Upload } from "@zenweb/upload";
+import { controller, mapping, QueryHelper } from "zenweb";
 import { DemoService } from "../service/demo_service";
 
 /**
@@ -13,17 +14,17 @@ export class Demo {
    * @api {get} /demo
    */
   @mapping()
-  index(ctx: Context, demoService: DemoService) {
-    ctx.success(demoService.sayHello());
+  index(demoService: DemoService) {
+    return demoService.sayHello();
   }
 
   /**
    * @api {get} /demo/helper
    */
   @mapping()
-  helper(ctx: Context) {
+  helper(qh: QueryHelper) {
     // 注意观察data结果类型
-    const data = ctx.helper.query({
+    const data = qh.get({
       id: "!int",
       num: "int",
       strlist: "string[]",
@@ -35,16 +36,16 @@ export class Demo {
         },
       },
     });
-    ctx.success(data);
+    return data;
   }
 
   /**
    * 上传演示
    */
   @mapping({ method: "POST" })
-  upload(ctx: Context) {
-    console.log("form:", ctx.request.body);
-    console.log("files:", ctx.request.files);
-    ctx.success("upload file");
+  upload(upload: Upload) {
+    console.log("fields:", upload.fields);
+    console.log("files:", upload.files);
+    return "upload file";
   }
 }

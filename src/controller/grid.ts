@@ -69,6 +69,6 @@ export class GridController {
       return {};
     });
     grid.setOrder("-id");
-    ctx.success(await grid.fetch(ctx.model.user.find().join('profile')));
+    return await grid.fetch(ctx.model.user.find().join('profile'));
   }
 }

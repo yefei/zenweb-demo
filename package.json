@@ -6,26 +6,28 @@
     "start": "node --enable-source-maps app",
     "build": "rimraf app && tsc",
     "dbgen": "zenorm gen .dbgen.json",
-    "dev-node": "cross-env NODE_ENV=development DEBUG=*,-zenweb:core:module:metric,-koa-router node --enable-source-maps app",
-    "dev": "rimraf app && tsc-watch --onSuccess \"yarn dev-node\""
+    "bench": "npm run build && node app",
+    "dev-start": "node -r dotenv/config --enable-source-maps app",
+    "dev": "rimraf app && tsc-watch --onSuccess \"npm run dev-start\""
   },
   "dependencies": {
-    "@zenweb/cors": "^2.3.0",
-    "@zenweb/form": "^3.5.0",
-    "@zenweb/grid": "^3.0.4",
-    "@zenweb/mysql": "^2.5.0",
-    "@zenweb/orm": "^2.4.1",
+    "@zenweb/cors": "^2.4.0",
+    "@zenweb/form": "^3.7.2",
+    "@zenweb/grid": "^3.1.2",
+    "@zenweb/mysql": "^3.2.0",
+    "@zenweb/orm": "^3.0.0",
+    "@zenweb/upload": "^3.0.1",
     "@zenweb/view": "^2.4.1",
     "debug": "^4.3.2",
     "moment": "^2.29.1",
-    "zenorm": "^3.18.1",
-    "zenweb": "^3.0.22"
+    "zenorm": "^3.21.3",
+    "zenweb": "^3.13.0"
   },
   "devDependencies": {
-    "@zenorm/mysql": "^1.0.2",
-    "cross-env": "^7.0.3",
-    "rimraf": "^3.0.2",
-    "tsc-watch": "^4.6.0",
-    "typescript": "^4.5.4"
+    "@zenorm/mysql": "^1.1.0",
+    "dotenv": "^16.0.3",
+    "rimraf": "^4.4.0",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.5"
   }
 }

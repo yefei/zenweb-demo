@@ -46,6 +46,7 @@ export default class User extends UserTable {
    * set 类型的字段是可选的，如果你想通过更新虚拟数据字段去更新其他字段，可以使用这个办法
    */
   set age(v) {
+    if (v === undefined) throw new Error('age is undefined');
     const date = new Date();
     date.setFullYear(date.getFullYear() - v, 1, 1);
     this.birthday = date;

@@ -1,4 +1,4 @@
-import { Context, mapping } from "zenweb";
+import { Context, mapping, ObjectBody } from "zenweb";
 import { ExampleForm } from "../form/example";
 
 /**
@@ -9,12 +9,12 @@ export class FormController {
    * 合并处理
    */
    @mapping({ method: ['GET', 'POST'] })
-   async form(ctx: Context, form: ExampleForm) {
+   async form(ctx: Context, form: ExampleForm, body: ObjectBody) {
      if (ctx.method === 'GET') {
         form.data = { name: '默认名字' };
      } else {
         // 验证用户提交的数据，如果有问题则直接抛出并终止流程，注意：assert 是一个异步函数
-        await form.assert(ctx.request.body);
+        await form.assert(body);
         return ctx.success(form.data);
      }
      ctx.success(form.result);

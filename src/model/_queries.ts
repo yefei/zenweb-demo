@@ -1,6 +1,6 @@
 // zenorm 自动生成文件
 // 请不要修改此文件，因为此文件在每次重新生成数据库结构时会被覆盖
-// create at: 2022/5/13 下午3:58:13
+// create at: 2023/3/15 19:31:16
 // create by: yefei@-
 // database: test
 import { Query, createRepositoryQuery } from 'zenorm';
@@ -31,8 +31,8 @@ export {
   User,
 };
 
-declare module 'koa' {
-  interface DefaultContext {
+declare module '@zenweb/core' {
+  interface Context {
     model: Queries;
   }
 }

@@ -1,11 +1,13 @@
 // zenorm 自动生成文件
 // 请不要修改此文件，因为此文件在每次重新生成数据库结构时会被覆盖
-// create at: 2022/5/13 下午3:58:13
+// create at: 2023/3/15 19:31:16
 // create by: yefei@-
 // database: test
+import { createRepositoryQuery } from 'zenorm';
 import _Global from './_global';
 
 export class MessageTable extends _Global {
+  static query = createRepositoryQuery<MessageTable, MessageTable, number>(this);
   static columns = ["id","user_id","content"];
   /**
    * type: int(11)
@@ -21,14 +23,14 @@ export class MessageTable extends _Global {
    * null: NO
    * default: null
    */
-  user_id: number;
+  user_id!: number;
   /**
    * type: varchar(255)
    * collation: utf8_general_ci
    * null: YES
    * default: null
    */
-  content?: string;
+  content?: string | null;
 }
 
 export class ProfileTable extends _Global {
@@ -47,14 +49,14 @@ export class ProfileTable extends _Global {
    * null: YES
    * default: null
    */
-  edu?: string;
+  edu?: string | null;
   /**
    * type: varchar(255)
    * collation: utf8_general_ci
    * null: YES
    * default: null
    */
-  work?: string;
+  work?: string | null;
 }
 
 export class UploadTable extends _Global {
@@ -74,7 +76,7 @@ export class UploadTable extends _Global {
    * null: NO
    * default: null
    */
-  user_id: number;
+  user_id!: number;
   /**
    * 文件链接
    * type: varchar(255)
@@ -82,7 +84,7 @@ export class UploadTable extends _Global {
    * null: YES
    * default: null
    */
-  url?: string;
+  url?: string | null;
   /**
    * 创建日期
    * type: datetime
@@ -98,7 +100,7 @@ export class UploadTable extends _Global {
    * null: YES
    * default: null
    */
-  deleted_at?: Date;
+  deleted_at?: Date | null;
 }
 
 export class UserTable extends _Global {
@@ -118,7 +120,7 @@ export class UserTable extends _Global {
    * null: YES
    * default: null
    */
-  avatar_id?: number;
+  avatar_id?: number | null;
   /**
    * 姓名
    * type: varchar(255)
@@ -126,7 +128,7 @@ export class UserTable extends _Global {
    * null: NO
    * default: null
    */
-  name: string;
+  name!: string;
   /**
    * 生日
    * type: date
@@ -134,7 +136,7 @@ export class UserTable extends _Global {
    * null: YES
    * default: null
    */
-  birthday?: Date;
+  birthday?: Date | null;
   /**
    * type: datetime
    * collation: null

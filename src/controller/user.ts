@@ -1,4 +1,4 @@
-import { Context, controller, inject, mapping } from "zenweb";
+import { BodyHelper, Context, controller, inject, mapping, ParamHelper, QueryHelper } from "zenweb";
 import UserService from "../service/user";
 
 /**
@@ -8,15 +8,15 @@ import UserService from "../service/user";
   prefix: "/user",
 })
 export class UserController {
-  @inject userService: UserService;
+  @inject userService!: UserService;
 
   /**
    * @api {get} /user
    */
   @mapping()
-  async index(ctx: Context) {
-    const user = await this.userService.getLastUser();
-    ctx.success(user);
+  async index() {
+    const user = this.userService.getLastUser();
+    return user;
   }
 
   /**
@@ -25,23 +25,23 @@ export class UserController {
    * @apiParam  {String} [birthday] 生日
    */
   @mapping({ method: "POST" })
-  async create(ctx: Context) {
-    const data = ctx.helper.body({
+  async create(bh: BodyHelper) {
+    const data = bh.get({
       name: "!trim",
       birthday: "date",
     });
     const id = await this.userService.create(data);
-    ctx.success({ id });
+    return { id };
   }
 
   /**
    * @api {get} /user/all
    */
   @mapping()
-  async all(ctx: Context) {
-    const page = ctx.helper.page({ allowOrder: ["id", "created_at"] });
+  async all(ctx: Context, qh: QueryHelper) {
+    const page = qh.page({ allowOrder: ["id", "created_at"] });
     const all = await ctx.model.user.find().page(page);
-    ctx.success(all);
+    return all;
   }
 
   /**
@@ -50,9 +50,9 @@ export class UserController {
    * @apiParam  {String} content 内容
    */
   @mapping({ method: "POST", path: "/:id/send" })
-  async send(ctx: Context) {
-    const { id } = ctx.helper.params({ id: "!int" });
-    const { content } = ctx.helper.body({
+  async send(ctx: Context, ph: ParamHelper, bh: BodyHelper) {
+    const { id } = ph.get({ id: "!int" });
+    const { content } = bh.get({
       content: {
         type: "string",
         required: true,
@@ -73,19 +73,19 @@ export class UserController {
       content,
     });
 
-    ctx.success({ messageId });
+    return { messageId };
   }
 
   /**
    * @api {get} /user/message-list 获取用户的消息列表
    */
   @mapping({ path: "/message-list" })
-  async messageList(ctx: Context) {
-    const page = ctx.helper.page();
+  async messageList(ctx: Context, qh: QueryHelper) {
+    const page = qh.page();
     const messageList = await ctx.model.user
       .find()
       .many("messageList")
       .page(page);
-    ctx.success(messageList);
+    return messageList;
   }
 }

@@ -1,1 +1,2 @@
-export default class Global {}
+export default class Global {
+}

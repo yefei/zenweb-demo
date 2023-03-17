@@ -9,12 +9,12 @@ export class DemoService {
   /**
    * 如果需要使用请求上下文 Context 对象，只需要使用 @inject 进行依赖注入即可
    */
-  @inject ctx: Context;
+  @inject ctx!: Context;
 
   /**
    * 如果需要依赖其他 Service，直接 import 后 @inject 即可
    */
-  @inject otherService: OtherService;
+  @inject otherService!: OtherService;
 
   sayHello() {
     return 'Hello: ' + this.ctx.ip;

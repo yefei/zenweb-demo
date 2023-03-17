@@ -3,11 +3,10 @@ import { Context, inject } from "zenweb";
 import { ProfileQuery, UserQuery, UserTable } from "../model";
 
 export default class UserService {
-  @inject
-  ctx: Context;
+  @inject ctx!: Context;
 
   getLastUser() {
-    return this.ctx.model.user.find().order("-id").get();
+    // return this.ctx.model.user.find().order("-id").get();
   }
 
   create(data: InsertRow<UserTable>) {

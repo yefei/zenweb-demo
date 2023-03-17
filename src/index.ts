@@ -4,12 +4,13 @@ import form from '@zenweb/form';
 import grid from '@zenweb/grid';
 import cors from '@zenweb/cors';
 import orm from '@zenweb/orm';
+import upload from '@zenweb/upload';
 import dbConfig from './config/db';
 import { Queries } from './model';
 
 // 创建 zenweb 实例
 export const app = create({
-  api: {
+  result: {
     failCode: 500,
     failStatus: 200,
     success(ctx, data) {
@@ -22,6 +23,7 @@ export const app = create({
 app.setup(cors({ origin: '*' }));
 app.setup(mysql(dbConfig.mysql));
 app.setup(orm({ Queries }));
+app.setup(upload());
 app.setup(form());
 app.setup(grid());
 
