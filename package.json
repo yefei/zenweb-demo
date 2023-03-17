@@ -6,7 +6,7 @@
     "start": "node --enable-source-maps app",
     "build": "rimraf app && tsc",
     "dbgen": "zenorm gen .dbgen.json",
-    "bench": "npm run build && node app",
+    "bench": "npm run build && node --inspect app",
     "dev-start": "node -r dotenv/config --enable-source-maps app",
     "dev": "rimraf app && tsc-watch --onSuccess \"npm run dev-start\""
   },
@@ -20,7 +20,7 @@
     "@zenweb/view": "^2.4.1",
     "debug": "^4.3.2",
     "moment": "^2.29.1",
-    "zenorm": "^3.21.3",
+    "zenorm": "^3.22.0",
     "zenweb": "^3.13.0"
   },
   "devDependencies": {

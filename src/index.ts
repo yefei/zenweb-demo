@@ -6,7 +6,7 @@ import cors from '@zenweb/cors';
 import orm from '@zenweb/orm';
 import upload from '@zenweb/upload';
 import dbConfig from './config/db';
-import { Queries } from './model';
+import { ModelQueries } from './model';
 
 // 创建 zenweb 实例
 export const app = create({
@@ -22,7 +22,7 @@ export const app = create({
 // 加载需要使用到的模块
 app.setup(cors({ origin: '*' }));
 app.setup(mysql(dbConfig.mysql));
-app.setup(orm({ Queries }));
+app.setup(orm({ Queries: ModelQueries }));
 app.setup(upload());
 app.setup(form());
 app.setup(grid());

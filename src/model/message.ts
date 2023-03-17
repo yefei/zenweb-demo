@@ -6,5 +6,6 @@ import { MessageTable } from './_tables';
   table: 'message',
 })
 export default class Message extends MessageTable {
+  static query = createRepositoryQuery<Message, number>(Message);
   
 }

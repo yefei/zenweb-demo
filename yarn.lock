@@ -1267,10 +1267,10 @@ zenlog.js@^3.0.1:
   resolved "https://registry.yarnpkg.com/zenlog.js/-/zenlog.js-3.0.1.tgz#be90c9fab65beb32ed277360f19b21cd60a83a19"
   integrity sha512-qYlfx4DAllZMLA6j+2uWr33ZeY7Cze4MIcYr+K6sZHASmUWy55qAOsK6SteXE369lGX7Fb9iua/w+k0gFN1aBg==
 
-zenorm@^3.21.3:
-  version "3.21.3"
-  resolved "https://registry.yarnpkg.com/zenorm/-/zenorm-3.21.3.tgz#ca9d2acbd5b5b200253eb696ec9aa2f1b21d5f31"
-  integrity sha512-oLEYRsu6j2tpazbTIBvWF2lstBuK4toIoL98OO8KKwggFX85buigjBQ9UQJvjb9nDNl1I/IfHCzYNSwts11cog==
+zenorm@^3.22.0:
+  version "3.22.0"
+  resolved "https://registry.yarnpkg.com/zenorm/-/zenorm-3.22.0.tgz#025d4b7c14f2d60453e1ac10ddd66c3313316005"
+  integrity sha512-DElkKZNJedZBmJG3oycwgHbqK0bZi4T9oODXeffw5ih8kK68Wqwa6u1+GVqDPqxCHZq6/7XbkgHJWsoO720fnA==
   dependencies:
     camel-case "^4.1.2"
     pascal-case "^3.1.2"

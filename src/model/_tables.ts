@@ -1,13 +1,11 @@
 // zenorm 自动生成文件
 // 请不要修改此文件，因为此文件在每次重新生成数据库结构时会被覆盖
-// create at: 2023/3/15 19:31:16
+// create at: 2023/3/17 16:39:36
 // create by: yefei@-
 // database: test
-import { createRepositoryQuery } from 'zenorm';
 import _Global from './_global';
 
 export class MessageTable extends _Global {
-  static query = createRepositoryQuery<MessageTable, MessageTable, number>(this);
   static columns = ["id","user_id","content"];
   /**
    * type: int(11)

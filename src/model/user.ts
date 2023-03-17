@@ -1,4 +1,4 @@
-import { data, join, many, model } from 'zenorm';
+import { createRepositoryQuery, data, join, many, model } from 'zenorm';
 // 注意导入其他表时必须直接从表定义文件中导入，不能从 '.' 中导入，否则会引发互相依赖问题，造成关联关系 undefined
 import Message from './message';
 import Profile from './profile';
@@ -10,6 +10,8 @@ import { UserTable } from './_tables';
   table: 'user',
 })
 export default class User extends UserTable {
+  static query = createRepositoryQuery<User, number>(User);
+
   /**
    * 一对一关联
    */

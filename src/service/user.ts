@@ -1,18 +1,18 @@
 import { InsertRow } from "zenorm";
 import { Context, inject } from "zenweb";
-import { ProfileQuery, UserQuery, UserTable } from "../model";
+import { Profile, User } from "../model";
 
 export default class UserService {
   @inject ctx!: Context;
 
   getLastUser() {
-    // return this.ctx.model.user.find().order("-id").get();
+    return this.ctx.model.user.find().order("-id").get();
   }
 
-  create(data: InsertRow<UserTable>) {
+  create(data: InsertRow<User>) {
     return this.ctx.db.transaction(async (q) => {
-      const id = await UserQuery(q).create(data);
-      await ProfileQuery(q).create({
+      const id = await User.query(q).create(data);
+      await Profile.query(q).create({
         id,
       });
       return id;
