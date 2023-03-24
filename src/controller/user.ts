@@ -1,4 +1,5 @@
 import { BodyHelper, Context, controller, inject, mapping, ParamHelper, QueryHelper } from "zenweb";
+import { Message, User } from "../model";
 import UserService from "../service/user";
 
 /**
@@ -38,9 +39,9 @@ export class UserController {
    * @api {get} /user/all
    */
   @mapping()
-  async all(ctx: Context, qh: QueryHelper) {
+  async all(qh: QueryHelper) {
     const page = qh.page({ allowOrder: ["id", "created_at"] });
-    const all = await ctx.model.user.find().page(page);
+    const all = await User.find().page(page);
     return all;
   }
 
@@ -63,12 +64,12 @@ export class UserController {
       },
     });
 
-    const userExists = await ctx.model.user.findByPk(id).exists();
+    const userExists = await User.findByPk(id).exists();
     if (!userExists) {
       ctx.fail("用户不存在!");
     }
 
-    const messageId = await ctx.model.message.create({
+    const messageId = await Message.create({
       user_id: id,
       content,
     });
@@ -80,9 +81,9 @@ export class UserController {
    * @api {get} /user/message-list 获取用户的消息列表
    */
   @mapping({ path: "/message-list" })
-  async messageList(ctx: Context, qh: QueryHelper) {
+  async messageList(qh: QueryHelper) {
     const page = qh.page();
-    const messageList = await ctx.model.user
+    const messageList = await User
       .find()
       .many("messageList")
       .page(page);

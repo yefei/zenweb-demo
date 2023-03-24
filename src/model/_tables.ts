@@ -1,11 +1,10 @@
 // zenorm 自动生成文件
 // 请不要修改此文件，因为此文件在每次重新生成数据库结构时会被覆盖
-// create at: 2023/3/17 16:39:36
+// create at: 2023/3/24 16:45:07
 // create by: yefei@-
 // database: test
-import _Global from './_global';
 
-export class MessageTable extends _Global {
+export class MessageTable {
   static columns = ["id","user_id","content"];
   /**
    * type: int(11)
@@ -31,7 +30,7 @@ export class MessageTable extends _Global {
   content?: string | null;
 }
 
-export class ProfileTable extends _Global {
+export class ProfileTable {
   static columns = ["id","edu","work"];
   /**
    * type: int(11)
@@ -57,7 +56,7 @@ export class ProfileTable extends _Global {
   work?: string | null;
 }
 
-export class UploadTable extends _Global {
+export class UploadTable {
   static columns = ["id","user_id","url","created_at","deleted_at"];
   /**
    * type: int(10) unsigned
@@ -101,7 +100,7 @@ export class UploadTable extends _Global {
   deleted_at?: Date | null;
 }
 
-export class UserTable extends _Global {
+export class UserTable {
   static columns = ["id","avatar_id","name","birthday","created_at","updated_at"];
   /**
    * type: int(11)

@@ -1,4 +1,4 @@
-import { createRepositoryQuery, model, Query } from 'zenorm';
+import { model } from 'zenorm';
 import { MessageTable } from './_tables';
 
 @model({
@@ -6,6 +6,4 @@ import { MessageTable } from './_tables';
   table: 'message',
 })
 export default class Message extends MessageTable {
-  static query = createRepositoryQuery<Message, number>(Message);
-  
 }

@@ -6,11 +6,11 @@ export default class UserService {
   @inject ctx!: Context;
 
   getLastUser() {
-    return this.ctx.model.user.find().order("-id").get();
+    return User.find().order("-id").get();
   }
 
   create(data: InsertRow<User>) {
-    return this.ctx.db.transaction(async (q) => {
+    return this.ctx.mysql.transaction(async (q) => {
       const id = await User.query(q).create(data);
       await Profile.query(q).create({
         id,

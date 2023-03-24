@@ -2,6 +2,7 @@ import { Context, mapping } from "zenweb";
 import { Grid } from "@zenweb/grid";
 import { fields } from "@zenweb/form";
 import * as moment from "moment";
+import { User } from "../model";
 
 function ageRange(min: number, max: number) {
   return {
@@ -17,7 +18,7 @@ function ageRange(min: number, max: number) {
  */
 export class GridController {
   @mapping()
-  async grid(ctx: Context, grid: Grid) {
+  async grid(grid: Grid) {
     grid.column("id").label("ID").sortable();
     grid.column("name").label("姓名");
     grid.column("profile.edu").label("教育");
@@ -69,6 +70,6 @@ export class GridController {
       return {};
     });
     grid.setOrder("-id");
-    return await grid.fetch(ctx.model.user.find().join('profile'));
+    return await grid.fetch(User.find().join('profile'));
   }
 }

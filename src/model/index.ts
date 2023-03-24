@@ -1,2 +1,2 @@
 export * from './_tables';
-export * from './_queries';
+export * from './_repositories';
