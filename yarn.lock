@@ -244,10 +244,10 @@
     decorator-make "^1.3.0"
     globby "11.0.4"
 
-"@zenweb/core@^3.5.1":
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/@zenweb/core/-/core-3.5.1.tgz#c04555d0610cdfed57801e74707ffeedce65dcf9"
-  integrity sha512-sc5yueP3PhQTfxi9u6ifLDj2aprF7/mGDf99iL67rAU6uqgDT++38gR095xRhN00W+tCiQ2BV+rgDOgkgQH2wA==
+"@zenweb/core@^3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@zenweb/core/-/core-3.5.5.tgz#db94e8dc4031274a1cc8e0a767ac7d03c160053c"
+  integrity sha512-zCsmMxwnCG1yVqXSMDfosLXbqsa/FxVA0zcPw14bNhHQJzQ7PXv5xv1ftaIGEitos/mpc5drWSzzPob8I4Kk5A==
   dependencies:
     "@types/debug" "^4.1.7"
     "@types/koa" "~2.13"
@@ -1272,14 +1272,14 @@ zenorm@^3.27.2:
     snake-case "^3.0.4"
     sql-easy-builder "^2.9.0"
 
-zenweb@^3.15.1:
-  version "3.15.1"
-  resolved "https://registry.yarnpkg.com/zenweb/-/zenweb-3.15.1.tgz#381c575a5e3de91464ebab7addf359cbb4e0f8ce"
-  integrity sha512-hYGCPF5iwytVy6awPaLd7LIaUmmceuozAKyClAorK0ghbnjJMaJg5StJwGP2Ce/Dv8Ut5cMHRT5IzfRr0l3IZQ==
+zenweb@^3.15.4:
+  version "3.15.4"
+  resolved "https://registry.yarnpkg.com/zenweb/-/zenweb-3.15.4.tgz#82a04da827f0ebae6c170e8943108cb1511ee9f9"
+  integrity sha512-LDfsnOvRtgEuBI9ng8SJHVG5u0bv2NDD/hz7/UOYQhKGIH+Ct5/kFFuFUZEG/U0cSMiUP/LFtQxHrm1NrbNopQ==
   dependencies:
     "@zenweb/body" "^3.6.1"
     "@zenweb/controller" "^3.10.0"
-    "@zenweb/core" "^3.5.1"
+    "@zenweb/core" "^3.5.5"
     "@zenweb/helper" "^3.4.0"
     "@zenweb/inject" "^3.18.0"
     "@zenweb/log" "^3.2.1"

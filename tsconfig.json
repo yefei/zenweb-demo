@@ -1,19 +1,7 @@
 {
+  "extends": "zenweb/tsconfig-app",
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "target": "ES2019",
-    "lib": [ "ES2019" ],
-    "module": "commonjs",
-    "strict": true,
-    "sourceMap": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "allowUnusedLabels": false,
-    "skipLibCheck": true,
-    "newLine": "lf",
     "outDir": "./app"
   },
-  "exclude": [ "node_modules" ],
   "include": [ "src/**/*" ]
 }
