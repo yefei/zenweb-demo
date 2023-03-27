@@ -1,6 +1,6 @@
 // zenorm 自动生成文件
 // 请不要修改此文件，因为此文件在每次重新生成数据库结构时会被覆盖
-// create at: 2023/3/24 16:45:07
+// create at: 2023/3/27 17:46:55
 // create by: yefei@-
 // database: test
 import { QueryParam, createRepositoryQuery } from 'zenorm';
@@ -27,6 +27,9 @@ export class Message extends _Message {
   static exists: typeof Message.repository.exists = Message.repository.exists.bind(Message.repository);
   static create: typeof Message.repository.create = Message.repository.create.bind(Message.repository);
   static createAndGet: typeof Message.repository.createAndGet = Message.repository.createAndGet.bind(Message.repository);
+  static save: typeof Message.repository.save = Message.repository.save.bind(Message.repository);
+  static update: typeof Message.repository.update = Message.repository.update.bind(Message.repository);
+  static delete: typeof Message.repository.delete = Message.repository.delete.bind(Message.repository);
   /** 保存当前实例数据 */
   save() { return Message.repository.save(this); }
   /** 更新当前实例数据 */
@@ -48,6 +51,9 @@ export class Profile extends _Profile {
   static exists: typeof Profile.repository.exists = Profile.repository.exists.bind(Profile.repository);
   static create: typeof Profile.repository.create = Profile.repository.create.bind(Profile.repository);
   static createAndGet: typeof Profile.repository.createAndGet = Profile.repository.createAndGet.bind(Profile.repository);
+  static save: typeof Profile.repository.save = Profile.repository.save.bind(Profile.repository);
+  static update: typeof Profile.repository.update = Profile.repository.update.bind(Profile.repository);
+  static delete: typeof Profile.repository.delete = Profile.repository.delete.bind(Profile.repository);
   /** 保存当前实例数据 */
   save() { return Profile.repository.save(this); }
   /** 更新当前实例数据 */
@@ -69,6 +75,9 @@ export class Upload extends _Upload {
   static exists: typeof Upload.repository.exists = Upload.repository.exists.bind(Upload.repository);
   static create: typeof Upload.repository.create = Upload.repository.create.bind(Upload.repository);
   static createAndGet: typeof Upload.repository.createAndGet = Upload.repository.createAndGet.bind(Upload.repository);
+  static save: typeof Upload.repository.save = Upload.repository.save.bind(Upload.repository);
+  static update: typeof Upload.repository.update = Upload.repository.update.bind(Upload.repository);
+  static delete: typeof Upload.repository.delete = Upload.repository.delete.bind(Upload.repository);
   /** 保存当前实例数据 */
   save() { return Upload.repository.save(this); }
   /** 更新当前实例数据 */
@@ -90,6 +99,9 @@ export class User extends _User {
   static exists: typeof User.repository.exists = User.repository.exists.bind(User.repository);
   static create: typeof User.repository.create = User.repository.create.bind(User.repository);
   static createAndGet: typeof User.repository.createAndGet = User.repository.createAndGet.bind(User.repository);
+  static save: typeof User.repository.save = User.repository.save.bind(User.repository);
+  static update: typeof User.repository.update = User.repository.update.bind(User.repository);
+  static delete: typeof User.repository.delete = User.repository.delete.bind(User.repository);
   /** 保存当前实例数据 */
   save() { return User.repository.save(this); }
   /** 更新当前实例数据 */

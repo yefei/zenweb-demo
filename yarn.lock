@@ -220,10 +220,10 @@
     mysql-easy-query "^3.4.2"
     mysql2 "^3.2.0"
 
-"@zenorm/generate@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@zenorm/generate/-/generate-1.2.0.tgz#13e061428fab18a05f45a55a077927fd5201e4b7"
-  integrity sha512-QgmnQkIT5T3Qb1s8QtCSYQji+GL8Mh2pTQWQPJugg59omrKQFlxYf3nHTGWexv4Thvt2z3daEW+/YNXzIhDH7Q==
+"@zenorm/generate@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@zenorm/generate/-/generate-1.3.1.tgz#056c786410cd423b41ad860b6834043ba7b406d4"
+  integrity sha512-UM5gAHOV5RmHtVgHUrV5dIw7SVMT9j28qH0ZeJanPqeFuFk7CR+ed/i8ct3/TEOeTtpHGYl8EHx+LZ1tw/JhdQ==
   dependencies:
     pascal-case "^3.1.2"
     snake-case "^3.0.4"
@@ -311,10 +311,10 @@
   resolved "https://registry.yarnpkg.com/@zenweb/meta/-/meta-2.4.1.tgz#edfc371773785d8fa10eff321b13c38ac2fed1b7"
   integrity sha512-BBQkawbA8dEAqSnWcH3+kb6WyXxsHvR9o9beAT1Uyh1Lz+LAgVwaIVrfvIlcH9B5B/AX19ceLSCJWWk5q+ZOgA==
 
-"@zenweb/mysql@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@zenweb/mysql/-/mysql-3.5.0.tgz#bc100318030ec020fb52c4af45ab7a66161c69ea"
-  integrity sha512-phb1JJ4bm/42YtUJrN5ZzDHHuACe2nkOxa8DOWOr1qwmPAJlnjEJrk070rou0RJJe1BxOEuIkwdhs/7QdJLlDA==
+"@zenweb/mysql@^3.5.2":
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/@zenweb/mysql/-/mysql-3.5.2.tgz#607b71818d9bcee99a32a09e5f406aa09ac74399"
+  integrity sha512-9j7QdNh05UOWd1QK3Dfb41kac8yzMJgaPTVu/hjLxg8uEUWB8+q/BTo7zabWBUAgUUN4nafqmn7VdHyOYpnwyQ==
   dependencies:
     mysql-easy-query "^3.12.0"
 
@@ -1231,10 +1231,10 @@ typecasts@^2.6.0:
   resolved "https://registry.yarnpkg.com/typecasts/-/typecasts-2.6.0.tgz#81eed469bc5a9cc7f136257e91c66024f182160a"
   integrity sha512-jP/+ClyKMxYFnx1pZk6hq5SQiy085zsxlc95UACDRxaltoVnbVcV2gDYD9e7pRWEhVX9A3GVEgzxEEAeNxHUqg==
 
-typescript@^4.9.5:
-  version "4.9.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
-  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
+typescript@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.2.tgz#891e1a90c5189d8506af64b9ef929fca99ba1ee5"
+  integrity sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==
 
 vary@^1.1.2:
   version "1.1.2"
@@ -1263,10 +1263,10 @@ zenlog.js@^3.0.1:
   resolved "https://registry.yarnpkg.com/zenlog.js/-/zenlog.js-3.0.1.tgz#be90c9fab65beb32ed277360f19b21cd60a83a19"
   integrity sha512-qYlfx4DAllZMLA6j+2uWr33ZeY7Cze4MIcYr+K6sZHASmUWy55qAOsK6SteXE369lGX7Fb9iua/w+k0gFN1aBg==
 
-zenorm@^3.27.1:
-  version "3.27.1"
-  resolved "https://registry.yarnpkg.com/zenorm/-/zenorm-3.27.1.tgz#e611e663d105465376b77d17a1caa65ae8ecc242"
-  integrity sha512-bQZYVIhr9DldX2el3NYQ8tBSjGzf2eC0xrLsN7C2/VZn8q6N8TriTTFQEOLT7zIQItvecoYy87/sxQLSX5ZyHQ==
+zenorm@^3.27.2:
+  version "3.27.2"
+  resolved "https://registry.yarnpkg.com/zenorm/-/zenorm-3.27.2.tgz#be97bcd43cf24e9641c8fb8ca1c1dbeba94bdf27"
+  integrity sha512-aKZdbhll2Wuj2jORFXp1v5PeVzo/YpfxMI4YZrmCXeeuhvka8jhhbAPoiTVSpFYo2SWDt1yl6e0zqE0FkrSIKw==
   dependencies:
     reflect-metadata "^0.1.13"
     snake-case "^3.0.4"

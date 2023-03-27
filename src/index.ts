@@ -11,7 +11,7 @@ export const app = create({
   result: {
     failCode: 500,
     failStatus: 200,
-    success(ctx, data) {
+    success(_, data) {
       return { code: 200, data };
     }
   },

@@ -1,4 +1,4 @@
-import { Context, mapping } from "zenweb";
+import { mapping } from "zenweb";
 import { Grid } from "@zenweb/grid";
 import { fields } from "@zenweb/form";
 import * as moment from "moment";
@@ -65,7 +65,7 @@ export class GridController {
         { label: "第一层", value: 1 },
         { label: "第二层", value: 2, parent: 1 },
       ])
-    ).where(v => {
+    ).where(() => {
       console.log('查询处理');
       return {};
     });
