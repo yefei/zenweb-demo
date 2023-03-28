@@ -22,6 +22,7 @@ app.setup(cors({ origin: '*' }));
 app.setup(mysql({
   bindQuery,
   pools: {
+    // 对于 ORM 自动读写分离名称必须设置为 MASTER 和 SLAVE*
     MASTER: {
       host: process.env.DB_HOST || 'localhost',
       port: parseInt(process.env.DB_PORT || '') || 3306,
@@ -32,6 +33,9 @@ app.setup(mysql({
       timezone: '+08:00',
       connectionLimit: 100,
     },
+    // 例如需要增加读库
+    // SLAVE1: { ...options... },
+    // SLAVE2: { ...options... },
   }
 }));
 app.setup(upload());
